@@ -8,8 +8,10 @@ const connect = function() {
 
   //The "connect" event is triggered on a connection as soon as it is successfully established
   conn.on("connect", () => {
-    conn.write("Name: AL");
     console.log("Successfully connected to game server");
+    conn.write("Name: AL");
+   //setInterval(() => conn.write("Move: up"), 1000);
+   //setInterval(() => conn.write("Move: left"), 1000);
   })
 
   // interpret incoming data as text
