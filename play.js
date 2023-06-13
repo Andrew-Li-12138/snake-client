@@ -16,7 +16,6 @@ const setupInput = function () {
     process.exit();
   }
 }
-  // setup interface to handle user input from stdin
   stdin.on("data", handleUserInput);
   
   return stdin;
