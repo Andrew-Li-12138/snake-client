@@ -6,12 +6,18 @@ const connect = function() {
     port: 50541
   });
 
+  //The "connect" event is triggered on a connection as soon as it is successfully established
+  conn.on("connect", () => {
+    conn.write("Name: AL");
+    console.log("Successfully connected to game server");
+  })
+
   // interpret incoming data as text
   conn.setEncoding("utf8");
 
   // handle incoming data and console.log it for the player
   conn.on("data", (data) => {
-    console.log("Game Over: ", data);
+    console.log(data);
   });
 
   return conn;
