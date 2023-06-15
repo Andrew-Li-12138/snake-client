@@ -20,13 +20,13 @@ https://github.com/lighthouse-labs/snek-multiplayer
 
 ## Getting Started
 
-- Follow steps inside the snek server repo to run the server side
+- Follow steps inside the snek server repo to run the server side: https://github.com/lighthouse-labs/snek-multiplayer/blob/master/README.md 
 - Run the development snake client using the `node play.js` command.
 
 ### Commands
 #### Movement
 
-Press w to move up, a to move left, s to move down, and d for move right. 
+Press w to move up, a to move left, s to move down, and d for move right. Please note that your snake can't make 180 degrees turn.
 
 #### Canned Message
 
