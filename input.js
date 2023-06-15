@@ -9,11 +9,11 @@ const setupInput = function(conn) {
   stdin.resume();
   //specify what happens when "data:" is received from stdin
   const handleUserInput = function(key) {
-
+  //exit game when pressing ctrl+c
     if (key === '\u0003') {
       process.exit();
     }
-
+   //specify what key w,a,s,d,space,b,g does (key:value is stored in constants.js as an object)
     if (keyMap[key]) {
       let command = keyMap[key]
      connection.write(command)
