@@ -20,6 +20,8 @@ https://github.com/lighthouse-labs/snek-multiplayer
 
 ## Getting Started
 
+### Setup
+
 - Follow steps inside the snek server repo to run the server side: https://github.com/lighthouse-labs/snek-multiplayer/blob/master/README.md 
 - Run the development snake client using the `node play.js` command.
 
